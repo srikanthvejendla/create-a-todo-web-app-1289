@@ -1,0 +1,31 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --color-bg: 0 0% 100%;
+  --color-surface: 0 0% 98%;
+  --color-primary: 221 83% 53%;
+  --color-secondary: 220 14% 96%;
+  --color-border: 220 13% 90%;
+  --color-text: 220 15% 20%;
+  --color-muted: 220 10% 60%;
+  --color-danger: 0 80% 60%;
+}
+
+.dark {
+  --color-bg: 220 13% 10%;
+  --color-surface: 220 13% 14%;
+  --color-primary: 221 83% 53%;
+  --color-secondary: 220 14% 22%;
+  --color-border: 220 13% 25%;
+  --color-text: 0 0% 98%;
+  --color-muted: 220 10% 60%;
+  --color-danger: 0 80% 60%;
+}
+
+body {
+  background: hsl(var(--color-bg));
+  color: hsl(var(--color-text));
+  font-family: 'Inter', 'Segoe UI', 'Helvetica Neue', Arial, sans-serif;
+}

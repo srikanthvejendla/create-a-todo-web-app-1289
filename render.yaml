@@ -1,0 +1,13 @@
+services:
+  - type: web
+    name: todo-web-app
+    env: node
+    plan: free
+    buildCommand: npm install && npm run build
+    startCommand: npm run start
+    envVars:
+      - key: NODE_ENV
+        value: production
+      - key: PORT
+        value: 4000
+      # Add your Supabase and other secrets in the Render dashboard or here
